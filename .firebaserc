@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "messenger-d4667": {
+      "hosting": {
+        "messenger": [
+          "messenger-d4667"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "messenger-d4667"
+  }
+}

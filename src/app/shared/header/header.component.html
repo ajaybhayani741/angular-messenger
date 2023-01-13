@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <div class="header" routerLink="/">
+      <img [src]="'assets/whatsapp.png'" alt="logo image" class="logo">
+      <span>Messenger</span>
+    </div>
+    <span class="example-spacer"></span>
+    <ng-container *ngFor="let item of headerItems">
+        <a class="navigation-item" [routerLink]="[item.url]" routerLinkActive="active-navigation">{{item.title}}</a>
+    </ng-container>
+
+  </mat-toolbar>

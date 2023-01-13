@@ -1,0 +1,25 @@
+<div class="dialog-header">
+  <h1 mat-dialog-title>Send Message</h1>
+  <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+    <mat-icon class="close-icon" color="primary">close</mat-icon>
+  </button>
+</div>
+<div mat-dialog-content>
+  <form [formGroup]="messageForm">
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="userName">
+      <mat-error *ngIf="formControls['userName'].touched && formControls['userName'].errors && formControls['userName'].errors['required']">Username is required.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width form-field">
+      <mat-label>Type your message here...</mat-label>
+      <textarea matInput formControlName="message" [rows]="5"></textarea>
+      <mat-error *ngIf="formControls['message'].touched && formControls['message'].errors && formControls['message'].errors['required']">Message is required.</mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="onNoClick()">Close</button>
+  <button mat-raised-button (click)="onSubmit()" color="primary">Submit</button>
+</div>

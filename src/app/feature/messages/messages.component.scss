@@ -1,0 +1,39 @@
+.custom-style {
+    margin: 3% 10%;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+th:nth-child(1) {
+    width: 10%;
+}
+
+th:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3) {
+    width: 20%;
+}
+
+.mat-mdc-no-data-row {
+    text-align: center;
+}
+
+.no-data {
+    padding: 25px;
+}
+
+.table-container {
+    max-height: 580px;
+    overflow: auto;
+}
